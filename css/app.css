@@ -1,14 +1,89 @@
-#container {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+body {
+    padding: 0;
+    margin: 0;
 }
 
-#dealerView {
-    border: 1px solid black;
-    border-radius: 4px;
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 110vh;
+    background-color: green;
+}
+
+#playerView,
+#bankView {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    width: 100%;
+}
+
+#playerView {
+    /* background-color: #007bff; */
+}
+
+#bankView {
+    /* background-color: #dc3545; */
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+#finalResult {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#playerScore,
+#bankScore {
+    font-size: 36px;
+}
+
+#playerWallet {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#playerHand,
+#bankHand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .cards {
-    width: 10%;
+    width: 100px;
+    margin: 5px;
+    background-color: #ffffff;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.card-animation {
+    transition: transform 0.1s ease-in-out;
+    transform: translateX(-200%);
+}
+
+.card-animation.active {
+    transform: translateX(0);
 }

@@ -9,17 +9,25 @@
 
 <body>
     <div id="gameContainer">
-        <h1 id='finalResult'></h1>
-        <h1 id="playerScore"></h1>
-        <h1 id="playerHand">player hand</h1>
-        <h1 id="bankHand">bank hand</h1>
-        <h1 id="bankScore"></h1>
-        <div id="tokens">
+        <div id="bankView">
+            <h1 id="bankHand"></h1>
+            <h1 id="bankScore"></h1>
+            <img src="./assets/png/blue_back.png1" class="cards" alt="">
+            <p id="pot"></p>
         </div>
-
-        <button id='stand'>rester</button>
-        <button id='hit'>tirer</button>
-        <button id='reload'>recommencer</button>
+        <div id="playerView">
+            <h1 id='finalResult'></h1>
+            <h1 id="playerScore"></h1>
+            <h1 id="playerHand"></h1>
+            <p id="playerWallet"></p>
+            <div id="dashboard">
+                <input type="number" id="bet">
+                <button id="betBtn">Bet</button>
+                <button id='stand'>rester</button>
+                <button id='hit'>tirer</button>
+                <button id='reload'>recommencer</button>
+            </div>
+        </div>
     </div>
 
 </body>
