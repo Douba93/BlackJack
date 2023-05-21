@@ -1,0 +1,14 @@
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#dealerView {
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.cards {
+    width: 10%;
+}
